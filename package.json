@@ -5,9 +5,9 @@
   "author": "ihsansatriawan",
   "license": "MIT",
   "scripts": {
-    "watch": "NODE_ENV=dev nodemon src/index.js --exec babel-node",
     "build": "babel src --ignore __tests__,__mocks__ -d dist",
-    "start": "npm run build && NODE_ENV=production node dist/index.js"
+    "start": "NODE_ENV=dev nodemon src/index.js --exec babel-node",
+    "production": "npm run build && NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "@babel/cli": "^7.2.3",
