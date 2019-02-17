@@ -9,6 +9,11 @@
     "start": "NODE_ENV=dev nodemon src/index.js --exec babel-node",
     "production": "npm run build && NODE_ENV=production node dist/index.js"
   },
+  "engines": {
+    "node": ">=10.14.1",
+    "npm": ">=6.4.1",
+    "yarn": ">=1.12.3"
+  },
   "dependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
