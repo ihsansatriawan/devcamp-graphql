@@ -8,7 +8,7 @@ const list = (_, args) => {
   
   // Pagination 
   const result = paginate(dataFiltered, perPage, page)
-  const totalItems = listItem.length
+  const totalItems = dataFiltered.length
   const totalPages = Math.ceil(totalItems / perPage);
 
   return {
