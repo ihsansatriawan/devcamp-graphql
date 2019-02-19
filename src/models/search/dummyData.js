@@ -331,4 +331,16 @@ const listItem = [
   }
 ]
 
-export { listItem }
+const default_data = {
+  id: 0,
+  name: "",
+  slug: "",
+  brand: "",
+  price: "",
+  imageUrl: "",
+  codeitem: "",
+  createdAt: "",
+  updatedAt: "",
+}
+
+export { listItem, default_data }

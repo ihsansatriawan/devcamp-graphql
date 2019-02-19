@@ -1,6 +1,7 @@
 import { GraphQLInt, GraphQLString, GraphQLBoolean } from 'graphql';
 import { SearchType }  from '../../types/search';
-import { getListSearch } from '../../models/search';
+import { ProductType }  from '../../types/product';
+import { getListSearch, getListSearchDetail } from '../../models/search';
 
 const GetSearch = {
   type: SearchType,
@@ -12,4 +13,12 @@ const GetSearch = {
   resolve: getListSearch
 }
 
-export { GetSearch }
+const GetSearchDetail = {
+  type: ProductType,
+  args: {
+    slug: { type: GraphQLString },
+  },
+  resolve: getListSearchDetail
+}
+
+export { GetSearch, GetSearchDetail }

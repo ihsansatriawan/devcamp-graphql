@@ -4,4 +4,5 @@ export {
 
 export {
   GetSearch as getSearch,
+  GetSearchDetail as getSearchDetail
 } from './Search';
