@@ -12,15 +12,19 @@ const app = express();
 
 app.use('*', cors());
 
+// app.use('/', (_, res) => {
+//   res.send('hello express');
+// });
+
 app.use('/graphql', bodyParser.json(), graphqlExpress({
   schema
 }));
 
-if (process.env.NODE_ENV === 'dev') {
+// if (process.env.NODE_ENV === 'dev') {
   app.use('/graphiql', graphiqlExpress({
     endpointURL: '/graphql',
   }));
-}
+// }
 
 app.listen(PORT, () => {
   console.log(`Running a GraphQL API server at localhost:${PORT}/graphql`);
