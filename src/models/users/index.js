@@ -1,0 +1,1 @@
+export { default as getUsers } from './list';
