@@ -30,7 +30,7 @@
     "graphql-server-express": "^1.4.0",
     "graphql-tools": "^4.0.4",
     "merge-graphql-schemas": "^1.5.8",
-    "mongoose": "^5.4.12"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "@babel/node": "^7.2.2",
