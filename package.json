@@ -24,7 +24,7 @@
     "concurrently": "^4.1.0",
     "config": "^3.0.1",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-graphql": "^0.7.1",
     "graphql": "^14.1.1",
     "graphql-server-express": "^1.4.0",
